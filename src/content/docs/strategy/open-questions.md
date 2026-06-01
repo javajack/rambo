@@ -17,7 +17,7 @@ Unverified (not rejected) items, each with how to resolve it.
 | Q6 | **Full enterprise compliance checklist** beyond IAM (pen tests, audit export, residency, air-gap, VPAT) | Spike + buyer interviews. | Low until enterprise push |
 | Q7 | **Scripting/testing complaints** — a follow-up pass returned *no verified complaints* | Re-run a dedicated research pass (it failed under rate limits). | Low–Medium |
 | Q8 | **Auth flow-ergonomics beyond the OAuth callback** (SigV4, mTLS, refresh rotation) | Deepen — these are corroborated but low-confidence; the callback handoff *is* validated. | Low |
-| Q9 | **Collaboration comments/review/change-awareness demand** | Validate whether teams want review workflows vs just safe sync. | Low |
+| Q9 | Collaboration demand — *resolved:* the validated want is **review-before-merge gating + legible diffs**, not comments (table-stakes) or presence/co-editing (no demand) | Decide in-app review UI depth vs deferring to host Git PRs | Low |
 
 ## Verification posture
 Every asserted claim in these docs passed adversarial verification or is flagged as estimate/unverified. Market-size figures are secondary syndicated research — **directional, not exact**. Refuted claims are listed in [Discounted Ideas](/rambo/strategy/discounted-ideas/). The method is described in [How This Was Built](/rambo/overview/methodology/).
