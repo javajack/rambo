@@ -1,0 +1,43 @@
+name: Deploy Docs to GitHub Pages
+
+# Builds the Astro + Starlight docs on every push to main and deploys to GitHub Pages.
+# NOTE: GitHub Pages on a PRIVATE repo requires GitHub Pro/Team/Enterprise to publish.
+# On a free private repo the `build` job still runs (CI validation); the `deploy` job
+# will only publish once Pages is enabled for the repo (Settings → Pages → Source: GitHub Actions).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment, don't cancel in-progress runs.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build with Astro
+        uses: withastro/action@v3
+        # withastro/action installs deps, runs `astro build`, and uploads the
+        # Pages artifact from ./dist automatically.
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

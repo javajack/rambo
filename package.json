@@ -1,0 +1,19 @@
+{
+  "name": "rambo-docs",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rambo — strategy, product, business, and feature deep-dive docs for a local-first, agent-native API client.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.32.0",
+    "astro": "^5.7.0",
+    "sharp": "^0.34.1"
+  }
+}

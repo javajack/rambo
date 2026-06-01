@@ -1,0 +1,49 @@
+---
+title: Rambo
+description: A local-first, closed-source, agent-native API client built to beat Postman, Insomnia, Bruno, Yaak and Hoppscotch at their own game — strategy, market, business model, and validated feature deep-dives.
+template: splash
+hero:
+  tagline: The local-first, agent-native API client — your data stays yours, AI agents can drive it, and it actually debugs LLM APIs. Built to beat the incumbents at their own game.
+  actions:
+    - text: Start with the Idea
+      link: /rambo/overview/the-idea/
+      icon: right-arrow
+      variant: primary
+    - text: Executive Summary
+      link: /rambo/overview/executive-summary/
+      icon: document
+    - text: Feature Deep Dives
+      link: /rambo/features/
+      icon: open-book
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## What this is
+
+This is the complete, evidence-backed playbook for **Rambo** — distilled from a multi-round, adversarially-verified research program (refuted claims discarded, honest gaps flagged). It covers everything from the idea to implementation: the market, the validated pain the incumbents keep inflicting, the unfilled gaps, the full product and per-feature deep dives, the business model, and the go-to-market.
+
+<CardGrid stagger>
+  <Card title="A real, validated wedge" icon="approve-check">
+    The #1 recurring developer pain is **forced accounts & cloud lock-in** — and **secret leakage** (30,000+ public Postman workspaces caught leaking credentials). Rambo is local-first, your data never leaves your machine unless you choose to sync.
+  </Card>
+  <Card title="Agent-native" icon="rocket">
+    A first-party **MCP server** + a **deterministic CLI** make Rambo the API client AI coding agents can *drive* — plus the first client with genuine **live LLM/agent-API debugging** (client-side only).
+  </Card>
+  <Card title="Lean & defensible" icon="setting">
+    Closed-source, **near-zero fixed infra** (one sync backend), metered only on backend-synced resources, with a self-hosted enterprise tier that *reduces* our own compliance burden.
+  </Card>
+  <Card title="Honest, not hyped" icon="information">
+    Market sizing is the realistic SAM (~$2.6B tools slice by 2030), not a TAM mirage. Every load-bearing claim is cited; unproven assumptions are labeled as open questions.
+  </Card>
+</CardGrid>
+
+## Jump in
+
+<CardGrid>
+  <LinkCard title="The Opportunity" description="Market sizing, the competitive landscape, and the validated customer pain." href="/rambo/opportunity/customer-pain/" />
+  <LinkCard title="The Product" description="Positioning, the three tiers, and the full feature map." href="/rambo/product/product-tiers/" />
+  <LinkCard title="Business Model" description="Closed-source model, pricing & plans, metering, and unit economics." href="/rambo/business/business-model/" />
+  <LinkCard title="Architecture" description="Client-first, one sync backend, and the hard-subsystem implementation choices." href="/rambo/architecture/overview/" />
+</CardGrid>
