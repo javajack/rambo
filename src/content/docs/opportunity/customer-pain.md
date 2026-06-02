@@ -43,4 +43,12 @@ Postman→Insomnia silently breaks variable references ([#6204](https://github.c
 Postman removed free team collaboration (Mar 2026); basic SSO is commonly gated behind the most expensive tier (the [sso.tax](https://sso.tax/) pattern).
 **→ Rambo:** free small-team collaboration; basic SSO low, advanced governance gated.
 
+## 🔴 Enterprise & collaboration (validated)
+- **Forced cloud is a *fireable offense*.** Enterprises with "nothing syncs to a cloud we can't audit" policies are blocked outright — *"a hard requirement that NOTHING I use can sync to the cloud"* ([Insomnia #6624](https://github.com/Kong/insomnia/issues/6624); 346-reaction backlash on [#6577](https://github.com/Kong/insomnia/issues/6577)). **→ local-first + no-account is an enterprise *requirement*, not a nicety.**
+- **The personal-vs-work account boundary is broken everywhere.** No account-merge exists in any tool; worse, *"leaving an external team workspace **wiped** my personal workspaces"* ([Postman community #89176](https://community.postman.com/t/leaving-an-external-team-workspace-wiped-my-personal-workspaces/89176)). **→ one identity, data-level ownership, never wipe personal data.**
+- **No symmetric cross-org collaboration.** Postman's Guest role is community-called *"crippled"*; Partner Workspaces is one-directional. **→ sharing = a scoped sync grant** (team / guest / partner / personal account).
+- **Deprovisioning is unreliable** — SSO alone doesn't deprovision. **→ SCIM + a managed-identity / domain-capture boundary.**
+
+Full treatment in [Enterprise & Multi-Tenancy](/rambo/enterprise/).
+
 For where these add up to genuinely *unowned* territory, see [Unfulfilled Gaps](/rambo/opportunity/unfulfilled-gaps/).

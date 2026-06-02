@@ -29,6 +29,9 @@ Browser-first tools (Hoppscotch) can't set custom auth/User-Agent headers on Web
 ## 7. A unified agent surface
 Postman has MCP; Yaak has an agent CLI; Bruno is closing the MCP gap — but **none unifies** a first-party MCP server + a deterministic CLI + git-native open files + local-first trust. That unification is the durable position. See [Feature 09](/rambo/features/09-agent-pillar-mcp-cli/).
 
+## 8. Cross-org collaboration + a sane account boundary
+No API client does **symmetric cross-org collaboration** (Postman's Guest role is "crippled"; Partner Workspaces is one-directional), and **none** handles the **personal-vs-work boundary** well — there is no account-merge in any tool, and leaving an org can *wipe your personal data*. "Sharing = a scoped sync grant" + "one identity, data-level ownership" is unowned territory. See [Enterprise → Collaboration](/rambo/enterprise/collaboration/) and the [tenancy model](/rambo/enterprise/tenancy-model/).
+
 :::tip[The thesis in one line]
 The win isn't any single feature — it's **unification**: git-native + local-first + agent CLI + MCP + deep LLM-API testing + verifiable trust, in one fast, closed-but-trusted product.
 :::

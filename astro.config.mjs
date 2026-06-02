@@ -34,6 +34,7 @@ export default defineConfig({
         { label: 'Feature Deep Dives', autogenerate: { directory: 'features' }, collapsed: true },
         { label: 'Business Model', autogenerate: { directory: 'business' } },
         { label: 'Go-To-Market', autogenerate: { directory: 'gtm' } },
+        { label: 'Enterprise & Multi-Tenancy', autogenerate: { directory: 'enterprise' }, collapsed: true },
         { label: 'Architecture & Implementation', autogenerate: { directory: 'architecture' } },
         { label: 'Engineering Specs', autogenerate: { directory: 'specs' }, collapsed: true },
         { label: 'Backend & Infrastructure', autogenerate: { directory: 'backend' }, collapsed: true },
