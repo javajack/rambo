@@ -9,11 +9,11 @@ sidebar:
 
 | Tier | Model | Target price | Benchmark |
 |---|---|---|---|
-| **Free** | local-first; free for up to *X* members | **$0** | the adoption engine |
+| **Free** | local-first; free collaboration **up to 5 members** | **$0** | the adoption engine |
 | **Team** | per-seat annual + cloud-consumption meter | **~$8–12 /seat/mo** | vs Postman $19; Obsidian $4 · AFFiNE $10 · Bruno $6–11 |
 | **Enterprise** | annual per-seat license + support/SLA | **~$30–40 /seat/mo** | vs Postman $49 · Insomnia $45 |
 
-Free-for-*X*-members is a direct counter to **Postman removing free team collaboration (March 2026)**.
+**Why up to 5?** Validated team-size data: **~50% of dev teams are 2-7 people** (JetBrains, n=23,262) and **84% of API teams are 1-9** (Postman State of the API 2025). A **free-up-to-5** cap captures genuine small teams (the adoption wedge) while pushing growing/professional teams (6+) to paid. It **beats Apidog's free-4 and crushes Postman's free-1** (Mar 2026) — a 4-person team that paid $0 now faces **~$912/yr** on Postman's $19/seat Team plan. *(3–5 is the defensible band; 5 is the launch value and a tunable lever — the precise optimum needs the org-workspace seat distribution, an [open micro-question](/rambo/strategy/open-questions/).)*
 
 ## Verified competitor pricing (2026, fast-moving)
 

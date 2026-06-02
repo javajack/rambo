@@ -27,5 +27,7 @@ Our [three tiers](/rambo/product/product-tiers/) map cleanly onto this divergenc
 - **Win mid-market** with a sane personal-vs-work boundary + contractor scoping (the thing nobody does well).
 - **Win enterprise** with self-host + data control + governance (the thing cloud-first tools *can't* offer).
 
-## Honest gap
-The **quantitative** segment sizing — org-size distribution and typical seat counts per segment — is **unquantified** (E1's Q4 returned nothing). Needed to calibrate the free-*X*-member threshold and packaging. See [Open Questions](/rambo/strategy/open-questions/).
+## Sizing (now quantified)
+Validated team-size distribution: **~50% of dev teams are 2-7 people** (JetBrains, n=23,262); **84% of API teams are 1-9** (Postman State of the API 2025); **57% of devs work at companies under 500 employees** (Stack Overflow 2025) — confirming **SMB/mid-market is the dominant self-serve segment.** This sets the **free-collaboration cap at up to 5 members** ([pricing](/rambo/business/pricing-and-plans/)): generous enough to capture most genuine small teams (the wedge), low enough that growing teams convert.
+
+**Residual micro-gap:** every survey measures *immediate-team* size, not org-wide *workspace seat* counts (the exact unit the free cap governs) — so 5 is a defensible launch value, not a measured optimum. Tunable. See [Open Questions](/rambo/strategy/open-questions/).

@@ -5,29 +5,34 @@ sidebar:
   order: 5
 ---
 
-The brief: find features *not* well served by **any** current API client that have **validated** demand. Unbiased — proven vs. plausible kept separate.
+The brief: find features *not* well served by **any** current API client that have **validated** demand. A focused pass against the non-obvious sources (Gartner Peer Insights, Canny/roadmap boards, G2/Capterra, dev-ecosystem surveys) then **validated-or-killed** each hypothesis. Honest verdicts below.
 
-## ✅ Validated & disruptive: Git-syncable, team-shareable *encrypted* secrets
-The clearest evidence-backed opening. Today, teams sharing secrets resort to **manually passing `.env` files** around. The demand is explicit and current:
-- Bruno open request [#7275](https://github.com/usebruno/bruno/issues/7275): *"Support Secret Encryption… using key like Yaak… otherwise I'll have to move to .env file based variables and share the .env file with everyone manually… Adding this feature will help me stay with Bruno and better collaboration."*
-- **Yaak already ships it** — sensitive fields encrypted (ChaCha20-Poly1305), a backup-able 32-byte workspace key, environments markable "sharable" for Git/directory sync.
-- **And Yaak's is buggy** (cross-machine decryption failures, orphaned data after key loss) — so there's room to do it *better*.
+## ✅ Validated — build these
 
-This is **already our [Spec 03](/rambo/specs/03-secrets-encryption/)** (shareable-yet-encrypted) — E2 independently re-validated it as a disruptive, unmet need. **High-confidence bet.**
+### 1. Git-syncable, team-shareable *encrypted* secrets — *highest confidence*
+Teams sharing secrets today resort to **manually passing `.env` files**. Bruno open request [#7275](https://github.com/usebruno/bruno/issues/7275): *"…otherwise I'll have to share the .env file with everyone manually… Adding this feature will help me stay with Bruno."* **Yaak ships it** (ChaCha20-Poly1305 + a 32-byte workspace key, "sharable" environments in Git sync) — **but buggy** (cross-machine decrypt failures, orphaned data on key loss), so there's room to do it better. **Already our [Spec 03](/rambo/specs/03-secrets-encryption/).**
 
-## 🟡 Plausible but NOT yet validated (research before betting)
-The brief named several candidates. Be honest: **only the secrets one produced surviving validated-pain evidence this pass.** The rest are *under-searched, not disproven* — the non-obvious sources (Reddit, X, G2/Capterra/TrustRadius, Gartner Peer Insights, Canny/roadmap boards) were largely absent from the surviving evidence, so absence of evidence ≠ evidence of absence:
-- **Internal API catalog / discoverability** (find/reuse your org's APIs)
-- **Environments-as-code** (env config in version control, reviewable)
-- **Spec-first / OpenAPI round-tripping** (drift detection between spec and requests)
-- **Contract testing** in the client
-- **Response diffing / snapshotting** (catch regressions across runs)
+### 2. Internal API catalog / discoverability — *strongest quantified signal*
+**34% of teams can't find existing APIs** in their own org, driving duplicated rebuild work; Postman's State of the API 2025 names "centralized API catalogs" as the fix ([SoA 2025](https://www.postman.com/state-of-api/2025/)). This is the feature that extends Rambo from "a better API client" toward **the team's API system of record** — a larger, stickier position. *(Caveat: Postman vendor survey — but a survey statistic, not a testimonial.)*
+
+### 3. Environments / config-as-code — *validated, cross-tool*
+Recurring public requests across tools: Hoppscotch [#870](https://github.com/hoppscotch/hoppscotch/issues/870) ("Sync Collections with Git repo", open since 2020) + [#3339](https://github.com/hoppscotch/hoppscotch/issues/3339), with an active **Jan 2026 implementation PR** ([#5797](https://github.com/hoppscotch/hoppscotch/pull/5797)). Framed as cross-tool: *"My team runs into this problem with Postman and any other web request UI."* Rides our [git-native format](/rambo/specs/01-file-format/) naturally.
+
+### 4. Spec-first / OpenAPI drift detection — *parity bet, not demand-pull*
+Compare an OpenAPI spec to the collection (missing/stale/modified endpoints), preserving user tests. Real & shipping/roadmap in Bruno ([OpenAPI Sync](https://docs.usebruno.com/open-api/openapi-sync); drift proposal [#7707](https://github.com/usebruno/bruno/issues/7707)) — **but community demand is thin** (one roadmap issue, ~zero engagement). Treat as **competitive parity**, not a wedge.
+
+## 🟡 Weak — nice-to-have, not a wedge
+- **Response diffing / snapshotting** (baseline an example, auto-diff later runs). Valid concept (Kreya ships it; Jest/Playwright pattern), but public demand is **thin/one-off** — ~7 thumbs across ~5 Postman issues over a decade. Build only if cheap.
+
+## ❌ NOT validated — do not build on current data
+The dedicated non-obvious-source pass found **no surviving cited demand** for these (evidence gap, not disconfirmation — but the discipline is no-build-without-validated-pain):
+- **Contract testing in the client**
 - **Governance / linting of API standards at scale**
-- **AI-assisted request/test authoring** (beyond the [LLM-testing wedge](/rambo/features/07-client-side-llm-testing/))
+- **AI-assisted request/test authoring** (beyond the [live LLM-testing wedge](/rambo/features/07-client-side-llm-testing/))
 
 ## The disciplined stance
-**Bet on the validated one** (encrypted shareable secrets — already core). Hold the rest as **hypotheses to validate**, not roadmap commitments — exactly the no-build-on-unvalidated-assumptions discipline this whole project runs on. A dedicated pass against the non-obvious sources (per [Open Questions](/rambo/strategy/open-questions/)) is the way to promote any of them from "plausible" to "proven."
+**Build the four validated** (secrets = core; API catalog = the system-of-record expansion; config-as-code = rides our format; spec-drift = parity). **Hold the weak one** as a cheap differentiator. **Don't build the three unvalidated** without a fresh signal.
 
-:::tip[Why this matters]
-Several of these (API catalog, environments-as-code, spec round-tripping) would, *if validated*, extend Rambo from "a better API client" toward "the team's API system of record" — a larger, stickier position. Worth validating deliberately; not worth assuming.
+:::tip[The bigger prize]
+**Internal API catalog / discoverability** is the standout — strongest-validated *and* most strategically expansive: the path from "a better API client" to "the team's API system of record." A deliberate post-core bet.
 :::

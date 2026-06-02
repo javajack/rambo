@@ -23,4 +23,4 @@ The CloudSEK leak (**30,000+ public Postman workspaces** exposing tokens/keys) v
 ## Honest gaps (not validated this round — flagged, not assumed)
 These are plausible enterprise needs the research did **not** confirm with primary pain this pass — treat as open, research before betting:
 - The exact bite of the **"SSO tax"** at our price point; **SCIM as an explicit named dealbreaker**; **custom RBAC roles**; **IP allowlisting**; **audit-log SIEM export**; the relative weight of **SOC 2 / ISO 27001 / HIPAA BAA / data residency**.
-- **Enterprise sizing** — the org-size and seat-count distribution for API tooling (to calibrate the free-*X*-member threshold and packaging) is **unquantified**. See [Open Questions](/rambo/strategy/open-questions/).
+- ~~Enterprise sizing~~ — **now resolved**: ~50% of teams are 2-7, 84% of API teams 1-9 → free cap set to **up to 5** ([customer segments](/rambo/enterprise/customer-segments/) · [pricing](/rambo/business/pricing-and-plans/)). Residual: org-*workspace-seat* (vs immediate-team) distribution.
