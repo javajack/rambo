@@ -48,4 +48,4 @@ Findings from a multi-round deep-research program. Only claims that passed 2-of-
 - **[H/est]** LLM-observability demand is large & consolidating (ClickHouse acquired Langfuse, Jan 2026).
 
 ## Honest gaps
-A scripting/testing complaint pass returned **no verified claims** (rate-limit failure); auth flow-ergonomics beyond the callback and collaboration-review demand remain low-confidence. Tracked in [Open Questions](/rambo/strategy/open-questions/).
+Follow-up passes **closed** the scripting/testing gap (validated: restricted sandbox, runner memory-leak, Newman silent-pass, `pm.*` lock-in) and the collaboration-demand gap (the want is review-gating + legible diffs, not comments/presence). What remains low-confidence: auth flow-ergonomics *beyond* the OAuth callback (SigV4, mTLS, refresh rotation). Tracked in [Open Questions](/rambo/strategy/open-questions/).

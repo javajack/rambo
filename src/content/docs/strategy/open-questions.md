@@ -15,7 +15,7 @@ Unverified (not rejected) items, each with how to resolve it.
 | Q4 | **Tauri-vs-Electron** tradeoffs (bundle/memory/startup/webview) | A benchmark spike, including Yaak/Bruno/Thunder Client. | Medium — foundational choice |
 | Q5 | **Closed-source enterprise security-review friction** (SBOM/source/escrow) | Validate during early enterprise sales. | Medium |
 | Q6 | **Full enterprise compliance checklist** beyond IAM (pen tests, audit export, residency, air-gap, VPAT) | Spike + buyer interviews. | Low until enterprise push |
-| Q7 | **Scripting/testing complaints** — a follow-up pass returned *no verified complaints* | Re-run a dedicated research pass (it failed under rate limits). | Low–Medium |
+| Q7 | Scripting/testing — *resolved:* validated complaints found (restricted sandbox / no async for ~5 yrs, runner memory-leak at scale, Newman silently passes 4xx/5xx, `pm.*` lock-in) | Decide `deno_core` vs `rquickjs`; `pm.*` shim completeness; ESM/CDN import policy | Low |
 | Q8 | **Auth flow-ergonomics beyond the OAuth callback** (SigV4, mTLS, refresh rotation) | Deepen — these are corroborated but low-confidence; the callback handoff *is* validated. | Low |
 | Q9 | Collaboration demand — *resolved:* the validated want is **review-before-merge gating + legible diffs**, not comments (table-stakes) or presence/co-editing (no demand) | Decide in-app review UI depth vs deferring to host Git PRs | Low |
 
