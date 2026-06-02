@@ -40,6 +40,7 @@ export default defineConfig({
         { label: 'Backend & Infrastructure', autogenerate: { directory: 'backend' }, collapsed: true },
         { label: 'Strategy & Decisions', autogenerate: { directory: 'strategy' } },
         { label: 'Evidence', autogenerate: { directory: 'evidence' } },
+        { label: '★ The Complete Workout', items: [{ label: 'One-Page Compendium (long read)', slug: 'compendium' }] },
       ],
     }),
   ],
