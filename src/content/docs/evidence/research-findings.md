@@ -16,6 +16,9 @@ Findings from a multi-round deep-research program. Only claims that passed 2-of-
 - **[H]** Yaak: closest thesis match (local-first, multi-protocol, agent CLI + MCP); now MIT.
 - **[H]** Postman ships MCP (built-in client + AI Tool Builder) — so "MCP exists" is not the wedge.
 - **[H]** Insomnia 12: only three thin AI features; no LLM-testing depth.
+- **[H]** ApiArk, Voiden, LiteClient, OpenReq, and Restflow add permissive OSS pressure to the thesis; local-first/no-login/Git/file-native/MCP claims are crowded.
+- **[H]** RESTK validates agent-safe API-client privacy as a concrete competitor feature set: MCP, schema extraction, synthetic data, redaction, and audit trail.
+- **[M-H]** APISense, Postmate Client, and Hurl add low-price/editor-native/browser-native pressure, but no public source/license was found in this scan.
 
 ## 3. Pricing (verified 2026; fast-moving)
 - Postman Free/$9/$19/$49 · Insomnia $0/$12/$45 · Bruno $0/~$6/$11 · Hoppscotch $0/$6 · Yaak $79-yr/$349-lifetime/$149-yr.
@@ -31,12 +34,14 @@ Findings from a multi-round deep-research program. Only claims that passed 2-of-
 
 ## 7. Licensing & moat
 - **[H]** Bruno abandoned one-time pricing ("does not scale for a team"); Sublime's dual model; GitLab's governance gating; Plausible's self-host-is-a-channel; Sentry's FSL coexisting with $100M ARR.
+- **[H]** Code leverage exists but is not a free pass: ApiArk, OpenReq, LiteClient, Restflow, and Yaak are MIT; Voiden and API Dash are Apache-2.0; RESTK/APISense/Postmate/Hurl are competitive-intelligence only unless public source appears.
 
 ## 8. Closed-source trust
 - **[H]** Open source not required for local-first trust (manifesto + Obsidian). Every local-first tool meters only cloud-resident dimensions. Thunder Client's paywall is the cautionary tale.
 
-## 9. The LLM-testing gap
-- **[H]** Live request-level LLM/agent-API debugging is unowned by any API client (Bruno #7835; Insomnia 12; Postman SSE drops first event #13537).
+## 9. The LLM-testing and agent-safety gap
+- **[H]** Live request-level LLM/agent-API debugging remains under-served (Bruno #7835; Insomnia 12; Postman SSE drops first event #13537).
+- **[H]** Generic agent/MCP support is no longer a wedge. The gap is permissioned, redacted, auditable agent access with replayable request/response provenance.
 
 ## 10. Sync architecture
 - **[H]** CRDT: Loro fastest, Yjs second, Automerge laggard. Cheapest backend: Yjs + S3 (y-sweet). Git-as-sync breaks on merge (#6889/#6864).

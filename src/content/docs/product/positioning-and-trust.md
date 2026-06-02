@@ -11,6 +11,8 @@ sidebar:
 
 The market is defined by *betrayed* trust. Rambo positions as the client that **never holds your data hostage** — and that AI agents can drive natively.
 
+The new-entrant scan tightens this claim: local-first and agent-native are now crowded words. Rambo's trust contract must be more specific: **agents get sanitized, permissioned API context, not raw secrets**; local files remain portable; team sync is explicit and reviewable.
+
 ## Closed-source can still win the trust wedge
 
 Open source is **not** required for local-first trust — the canonical local-first manifesto says commercial, closed software can satisfy the ideals "as long as it does not artificially restrict what users can do with their files," and **Obsidian** is living proof (closed-source, no-signup, deeply trusted). Closed-source also dissolves the licensing complexity and fork risk that a source-available model carries.
@@ -24,6 +26,7 @@ But the trust burden shifts from "audit our code" to **provable behavior.**
 3. **Open, portable file format** — this *replaces* open source as the anti-lock-in proof. "Closed app, open format."
 4. **Scoped, precise privacy claims** — state exactly what is/isn't collected; never an absolute promise we can't keep. AES-256 E2E for any sync, with a published verification procedure.
 5. **The free offline + git tier is permanent and unmetered.**
+6. **Agent access is permissioned and redacted by default** — schema extraction, synthetic examples, credential/PII redaction, scoped collection access, and audit trails are part of the trust contract.
 
 :::caution[The cautionary tale]
 Thunder Client moved its git-sync behind a 2023 paywall and bled community trust. **Never paywall something the free tier relied on.** A permanent free tier is most credible when the free thing (local + git-sync) costs us nothing to host — so there's no business pressure to ever paywall it.

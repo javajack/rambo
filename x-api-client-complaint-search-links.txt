@@ -1,0 +1,153 @@
+X / Twitter search links for API client complaints
+Generated: 2026-06-02
+
+Notes:
+- These links are meant for manual reading and discovery, not exhaustive archival coverage.
+- X search can be inconsistent. Use the "Latest" tab if results look too sparse.
+- Operators used: quoted phrases, OR groups, lang:en, -filter:retweets, and min_faves.
+- Remove -filter:retweets if you want repost amplification too.
+
+1. General API client complaints
+Query:
+("api client" OR "API client" OR "REST client" OR "http client") (sucks OR hate OR annoying OR frustrated OR broken OR slow OR bloated OR expensive OR pricing OR paywall OR "forced login" OR "sign in" OR cloud) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(%22api%20client%22%20OR%20%22API%20client%22%20OR%20%22REST%20client%22%20OR%20%22http%20client%22)%20(sucks%20OR%20hate%20OR%20annoying%20OR%20frustrated%20OR%20broken%20OR%20slow%20OR%20bloated%20OR%20expensive%20OR%20pricing%20OR%20paywall%20OR%20%22forced%20login%22%20OR%20%22sign%20in%22%20OR%20cloud)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+2. General API tool alternatives driven by pain
+Query:
+("Postman alternative" OR "Insomnia alternative" OR "Bruno alternative" OR "API client alternative") (because OR hate OR tired OR frustrated OR slow OR bloated OR cloud OR pricing OR login) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(%22Postman%20alternative%22%20OR%20%22Insomnia%20alternative%22%20OR%20%22Bruno%20alternative%22%20OR%20%22API%20client%20alternative%22)%20(because%20OR%20hate%20OR%20tired%20OR%20frustrated%20OR%20slow%20OR%20bloated%20OR%20cloud%20OR%20pricing%20OR%20login)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+3. Switching away from existing API clients
+Query:
+("switched from Postman" OR "switching from Postman" OR "left Postman" OR "moved from Postman" OR "ditched Postman" OR "replaced Postman") lang:en -filter:retweets
+Link:
+https://x.com/search?q=(%22switched%20from%20Postman%22%20OR%20%22switching%20from%20Postman%22%20OR%20%22left%20Postman%22%20OR%20%22moved%20from%20Postman%22%20OR%20%22ditched%20Postman%22%20OR%20%22replaced%20Postman%22)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+4. Postman broad complaints
+Query:
+(Postman OR @getpostman) (sucks OR hate OR annoying OR frustrated OR broken OR slow OR bloated OR unusable OR "doesn't work" OR "not working") lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Postman%20OR%20%40getpostman)%20(sucks%20OR%20hate%20OR%20annoying%20OR%20frustrated%20OR%20broken%20OR%20slow%20OR%20bloated%20OR%20unusable%20OR%20%22doesn't%20work%22%20OR%20%22not%20working%22)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+5. Postman forced login/account complaints
+Query:
+(Postman OR @getpostman) ("forced login" OR "forced account" OR "sign in" OR signin OR login OR account OR auth) (hate OR annoying OR why OR required OR mandatory OR cloud) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Postman%20OR%20%40getpostman)%20(%22forced%20login%22%20OR%20%22forced%20account%22%20OR%20%22sign%20in%22%20OR%20signin%20OR%20login%20OR%20account%20OR%20auth)%20(hate%20OR%20annoying%20OR%20why%20OR%20required%20OR%20mandatory%20OR%20cloud)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+6. Postman cloud/local-first complaints
+Query:
+(Postman OR @getpostman) (cloud OR sync OR local OR offline OR "local first" OR "local-first" OR workspace) (hate OR annoying OR frustrated OR broken OR required OR forced) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Postman%20OR%20%40getpostman)%20(cloud%20OR%20sync%20OR%20local%20OR%20offline%20OR%20%22local%20first%22%20OR%20%22local-first%22%20OR%20workspace)%20(hate%20OR%20annoying%20OR%20frustrated%20OR%20broken%20OR%20required%20OR%20forced)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+7. Postman pricing/free-team complaints
+Query:
+(Postman OR @getpostman) (pricing OR price OR paid OR paywall OR subscription OR "free team" OR "free plan" OR expensive OR seats OR billing) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Postman%20OR%20%40getpostman)%20(pricing%20OR%20price%20OR%20paid%20OR%20paywall%20OR%20subscription%20OR%20%22free%20team%22%20OR%20%22free%20plan%22%20OR%20expensive%20OR%20seats%20OR%20billing)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+8. Postman bloat/performance complaints
+Query:
+(Postman OR @getpostman) (bloated OR bloat OR slow OR sluggish OR heavy OR memory OR electron OR startup OR crash OR crashing) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Postman%20OR%20%40getpostman)%20(bloated%20OR%20bloat%20OR%20slow%20OR%20sluggish%20OR%20heavy%20OR%20memory%20OR%20electron%20OR%20startup%20OR%20crash%20OR%20crashing)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+9. Postman import/export/collections pain
+Query:
+(Postman OR @getpostman) (collection OR collections OR export OR import OR environment OR variables OR sync) (broken OR annoying OR lost OR missing OR pain OR hate) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Postman%20OR%20%40getpostman)%20(collection%20OR%20collections%20OR%20export%20OR%20import%20OR%20environment%20OR%20variables%20OR%20sync)%20(broken%20OR%20annoying%20OR%20lost%20OR%20missing%20OR%20pain%20OR%20hate)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+10. Insomnia broad complaints
+Query:
+(Insomnia OR "Insomnia REST" OR "Insomnia API" OR @GetInsomnia) (sucks OR hate OR annoying OR frustrated OR broken OR slow OR bloated OR unusable OR "doesn't work" OR "not working") lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Insomnia%20OR%20%22Insomnia%20REST%22%20OR%20%22Insomnia%20API%22%20OR%20%40GetInsomnia)%20(sucks%20OR%20hate%20OR%20annoying%20OR%20frustrated%20OR%20broken%20OR%20slow%20OR%20bloated%20OR%20unusable%20OR%20%22doesn't%20work%22%20OR%20%22not%20working%22)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+11. Insomnia login/cloud/Kong complaints
+Query:
+(Insomnia OR "Insomnia REST" OR "Insomnia API" OR @GetInsomnia) (login OR account OR cloud OR sync OR Kong OR "sign in" OR "forced account" OR "forced login") (hate OR annoying OR frustrated OR required OR mandatory OR why) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Insomnia%20OR%20%22Insomnia%20REST%22%20OR%20%22Insomnia%20API%22%20OR%20%40GetInsomnia)%20(login%20OR%20account%20OR%20cloud%20OR%20sync%20OR%20Kong%20OR%20%22sign%20in%22%20OR%20%22forced%20account%22%20OR%20%22forced%20login%22)%20(hate%20OR%20annoying%20OR%20frustrated%20OR%20required%20OR%20mandatory%20OR%20why)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+12. Insomnia pricing/license complaints
+Query:
+(Insomnia OR "Insomnia REST" OR "Insomnia API" OR @GetInsomnia) (pricing OR price OR paid OR paywall OR subscription OR expensive OR license OR billing) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Insomnia%20OR%20%22Insomnia%20REST%22%20OR%20%22Insomnia%20API%22%20OR%20%40GetInsomnia)%20(pricing%20OR%20price%20OR%20paid%20OR%20paywall%20OR%20subscription%20OR%20expensive%20OR%20license%20OR%20billing)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+13. Bruno broad complaints
+Query:
+(Bruno OR "Bruno API" OR "Bruno client" OR "usebruno" OR @usebruno) (sucks OR hate OR annoying OR frustrated OR broken OR slow OR missing OR unusable OR "doesn't work" OR "not working") lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Bruno%20OR%20%22Bruno%20API%22%20OR%20%22Bruno%20client%22%20OR%20%22usebruno%22%20OR%20%40usebruno)%20(sucks%20OR%20hate%20OR%20annoying%20OR%20frustrated%20OR%20broken%20OR%20slow%20OR%20missing%20OR%20unusable%20OR%20%22doesn't%20work%22%20OR%20%22not%20working%22)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+14. Bruno feature gaps
+Query:
+(Bruno OR "Bruno API" OR "Bruno client" OR "usebruno" OR @usebruno) (missing OR lacks OR "wish it had" OR "doesn't support" OR "not supported" OR GraphQL OR grpc OR websocket OR sync OR collection) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Bruno%20OR%20%22Bruno%20API%22%20OR%20%22Bruno%20client%22%20OR%20%22usebruno%22%20OR%20%40usebruno)%20(missing%20OR%20lacks%20OR%20%22wish%20it%20had%22%20OR%20%22doesn't%20support%22%20OR%20%22not%20supported%22%20OR%20GraphQL%20OR%20grpc%20OR%20websocket%20OR%20sync%20OR%20collection)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+15. Hoppscotch complaints
+Query:
+(Hoppscotch OR "hoppscotch.io" OR @hoppscotch_io) (sucks OR hate OR annoying OR frustrated OR broken OR slow OR missing OR unusable OR "doesn't work" OR "not working") lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Hoppscotch%20OR%20%22hoppscotch.io%22%20OR%20%40hoppscotch_io)%20(sucks%20OR%20hate%20OR%20annoying%20OR%20frustrated%20OR%20broken%20OR%20slow%20OR%20missing%20OR%20unusable%20OR%20%22doesn't%20work%22%20OR%20%22not%20working%22)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+16. Yaak complaints
+Query:
+(Yaak OR "Yaak app" OR "Yaak API" OR "yaak.app") (sucks OR hate OR annoying OR frustrated OR broken OR slow OR missing OR unusable OR "doesn't work" OR "not working") lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Yaak%20OR%20%22Yaak%20app%22%20OR%20%22Yaak%20API%22%20OR%20%22yaak.app%22)%20(sucks%20OR%20hate%20OR%20annoying%20OR%20frustrated%20OR%20broken%20OR%20slow%20OR%20missing%20OR%20unusable%20OR%20%22doesn't%20work%22%20OR%20%22not%20working%22)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+17. Thunder Client complaints
+Query:
+("Thunder Client" OR @Thunder_Client) (sucks OR hate OR annoying OR frustrated OR broken OR slow OR missing OR unusable OR paywall OR paid OR pricing OR "doesn't work" OR "not working") lang:en -filter:retweets
+Link:
+https://x.com/search?q=(%22Thunder%20Client%22%20OR%20%40Thunder_Client)%20(sucks%20OR%20hate%20OR%20annoying%20OR%20frustrated%20OR%20broken%20OR%20slow%20OR%20missing%20OR%20unusable%20OR%20paywall%20OR%20paid%20OR%20pricing%20OR%20%22doesn't%20work%22%20OR%20%22not%20working%22)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+18. Paw / RapidAPI client complaints
+Query:
+(Paw OR "RapidAPI client" OR "RapidAPI for Mac") (sucks OR hate OR annoying OR frustrated OR broken OR abandoned OR missing OR unusable OR "not working") lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Paw%20OR%20%22RapidAPI%20client%22%20OR%20%22RapidAPI%20for%20Mac%22)%20(sucks%20OR%20hate%20OR%20annoying%20OR%20frustrated%20OR%20broken%20OR%20abandoned%20OR%20missing%20OR%20unusable%20OR%20%22not%20working%22)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+19. API client auth/environment pain
+Query:
+("api client" OR Postman OR Insomnia OR Bruno OR Hoppscotch OR Yaak) (auth OR OAuth OR token OR environment OR variables OR secrets) (hate OR annoying OR broken OR painful OR frustrated OR confusing) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(%22api%20client%22%20OR%20Postman%20OR%20Insomnia%20OR%20Bruno%20OR%20Hoppscotch%20OR%20Yaak)%20(auth%20OR%20OAuth%20OR%20token%20OR%20environment%20OR%20variables%20OR%20secrets)%20(hate%20OR%20annoying%20OR%20broken%20OR%20painful%20OR%20frustrated%20OR%20confusing)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+20. API client collaboration/sync pain
+Query:
+("api client" OR Postman OR Insomnia OR Bruno OR Hoppscotch OR Yaak) (collaboration OR team OR teams OR sync OR workspace OR sharing) (hate OR annoying OR broken OR expensive OR frustrated OR required) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(%22api%20client%22%20OR%20Postman%20OR%20Insomnia%20OR%20Bruno%20OR%20Hoppscotch%20OR%20Yaak)%20(collaboration%20OR%20team%20OR%20teams%20OR%20sync%20OR%20workspace%20OR%20sharing)%20(hate%20OR%20annoying%20OR%20broken%20OR%20expensive%20OR%20frustrated%20OR%20required)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+21. API client local/offline/git pain
+Query:
+("api client" OR Postman OR Insomnia OR Bruno OR Hoppscotch OR Yaak) (local OR offline OR git OR "local first" OR "local-first") (wish OR hate OR annoying OR broken OR missing OR frustrated) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(%22api%20client%22%20OR%20Postman%20OR%20Insomnia%20OR%20Bruno%20OR%20Hoppscotch%20OR%20Yaak)%20(local%20OR%20offline%20OR%20git%20OR%20%22local%20first%22%20OR%20%22local-first%22)%20(wish%20OR%20hate%20OR%20annoying%20OR%20broken%20OR%20missing%20OR%20frustrated)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+22. Reddit-linked posts on X about API client complaints
+Query:
+(Postman OR Insomnia OR Bruno OR Hoppscotch OR Yaak OR "API client") (reddit.com OR "r/postman" OR "r/webdev" OR "r/programming") (hate OR sucks OR annoying OR broken OR pricing OR login) lang:en -filter:retweets
+Link:
+https://x.com/search?q=(Postman%20OR%20Insomnia%20OR%20Bruno%20OR%20Hoppscotch%20OR%20Yaak%20OR%20%22API%20client%22)%20(reddit.com%20OR%20%22r%2Fpostman%22%20OR%20%22r%2Fwebdev%22%20OR%20%22r%2Fprogramming%22)%20(hate%20OR%20sucks%20OR%20annoying%20OR%20broken%20OR%20pricing%20OR%20login)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+23. High-engagement complaint posts
+Query:
+("Postman" OR "Insomnia" OR "Bruno" OR "Hoppscotch" OR "Yaak" OR "Thunder Client") (sucks OR hate OR annoying OR bloated OR broken OR expensive OR paywall OR "forced login") min_faves:10 lang:en -filter:retweets
+Link:
+https://x.com/search?q=(%22Postman%22%20OR%20%22Insomnia%22%20OR%20%22Bruno%22%20OR%20%22Hoppscotch%22%20OR%20%22Yaak%22%20OR%20%22Thunder%20Client%22)%20(sucks%20OR%20hate%20OR%20annoying%20OR%20bloated%20OR%20broken%20OR%20expensive%20OR%20paywall%20OR%20%22forced%20login%22)%20min_faves%3A10%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+
+24. Recent live complaint stream
+Query:
+("Postman" OR "Insomnia" OR "Bruno" OR "Hoppscotch" OR "Yaak" OR "Thunder Client" OR "API client") (sucks OR hate OR annoying OR broken OR slow OR bloated OR expensive OR paywall OR "not working") lang:en -filter:retweets
+Link:
+https://x.com/search?q=(%22Postman%22%20OR%20%22Insomnia%22%20OR%20%22Bruno%22%20OR%20%22Hoppscotch%22%20OR%20%22Yaak%22%20OR%20%22Thunder%20Client%22%20OR%20%22API%20client%22)%20(sucks%20OR%20hate%20OR%20annoying%20OR%20broken%20OR%20slow%20OR%20bloated%20OR%20expensive%20OR%20paywall%20OR%20%22not%20working%22)%20lang%3Aen%20-filter%3Aretweets&src=typed_query&f=live
+

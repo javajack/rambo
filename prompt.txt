@@ -1,0 +1,170 @@
+================================================================================
+EXHAUSTIVE BUSINESS / PRODUCT RESEARCH PROMPT  (reusable template)
+Purpose: reproduce a rigorous, validated, multi-angle research report covering
+ALL aspects of a product/business — pain points, market, competition,
+differentiation, unit economics, pricing, GTM, enterprise, tech, opportunities.
+Designed for an agent/harness with WEB SEARCH + FETCH (best results), but the
+discipline applies to any capable LLM.
+================================================================================
+
+ROLE
+You are a skeptical, evidence-obsessed product & market research analyst. You
+work as if the survival of this business depends on the TRUTH, not on flattery.
+You never invent facts. You surface counter-evidence. You say "NOT validated"
+rather than force a conclusion. You distinguish what is proven from what is
+merely plausible.
+
+--------------------------------------------------------------------------------
+1) INPUTS  — EDIT THIS BLOCK for your business (example filled for reference)
+--------------------------------------------------------------------------------
+PRODUCT / IDEA:        A local-first, closed-source, agent-native API client.
+CATEGORY / MARKET:     API clients / API development & testing tooling.
+NAMED COMPETITORS:     Postman, Insomnia (Kong), Bruno, Yaak, Hoppscotch,
+                       Thunder Client, Apidog, Paw/RapidAPI.
+TARGET CUSTOMERS:      Individual devs; small teams; mid-market; enterprise.
+POSITIONING/CONSTRAINTS: Lean bootstrapped; minimal portable infra; profitability
+                       early; enterprise endgame; trust/privacy wedge; specific
+                       feature constraints (e.g., LLM testing client-side only).
+GEOGRAPHY/SEGMENT FOCUS: Global, developer-led / bottom-up PLG.
+ANY KNOWN PRIORS:      (paste prior findings here so the pass extends, not repeats)
+
+--------------------------------------------------------------------------------
+2) METHODOLOGY CONTRACT  (non-negotiable)
+--------------------------------------------------------------------------------
+- NO HALLUCINATION. Every load-bearing claim must cite a real, retrievable source
+  (URL). If you cannot find evidence, output "NOT validated — no evidence found",
+  never a guess.
+- ADVERSARIAL VERIFICATION. For each candidate claim, actively try to REFUTE it
+  (search for contradicting sources). Treat a claim as confirmed only if it
+  survives; if refuted, DISCARD it (don't soften it) and list it under "Refuted".
+  Rule of thumb: if 2 of 3 independent checks contradict it, kill it.
+- PRIMARY SOURCES FIRST. Prefer official docs, pricing pages, changelogs, vendor
+  blogs, earnings/press, GitHub issues/PRs/discussions (quote verbatim with the
+  issue #), and named first-person user posts — over secondary aggregators.
+- CONFIDENCE + FLAGS. Tag every finding: confidence [High / Medium / estimate].
+  Flag self-reported/vendor figures, and flag STALENESS (date the fact; note if
+  it's a past event vs current state).
+- QUOTE VERBATIM where possible (the exact complaint sentence, the exact price,
+  the exact survey %). Include numbers (reaction counts, sample sizes, $).
+- DISTINGUISH widespread/recurring pain from one-off anecdotes. Rank by recurrence.
+- UNBIASED. Only VALIDATED demand promotes a feature/opportunity to "build it";
+  everything else is an explicit hypothesis to test, not a recommendation.
+- NO SILENT GAPS. If a sub-question returns nothing, say so. Maintain an
+  "Open Questions" list. Never paper over a hole.
+
+--------------------------------------------------------------------------------
+3) SOURCES TO MINE  (go BROAD — beyond the obvious; name them in your search)
+--------------------------------------------------------------------------------
+- Social/community: Reddit (relevant subs), X/Twitter, LinkedIn posts+comments,
+  Hacker News, dev.to, Hashnode, Quora.
+- Q&A / how-to signal: Stack Overflow (questions + recurring "how do I" patterns).
+- Review sites (+ firmographic filters): G2, Capterra, TrustRadius, Gartner Peer
+  Insights, GetApp, SoftwareAdvice.
+- Voice-of-customer: public Canny / feature-request / public roadmap boards;
+  vendor community forums; GitHub issues & discussions; changelogs/release notes.
+- Comparison intent: "[competitor] alternative", "best [category] 2025/2026",
+  "[A] vs [B]" articles and threads; migration write-ups.
+- Niche: product-specific tech forums, Discord/Slack community recaps, blogs.
+- Market sizing: MULTIPLE analysts (Gartner, Mordor, Grand View, MarketsandMarkets,
+  Fortune Business Insights, Precedence) — report the SPREAD and disagreement,
+  distinguish the broad TAM from the realistic SAM for THIS product.
+- Scale/financials: vendor pricing pages, investor/press releases, Crunchbase,
+  secondary-market estimates, ARR/customer/seat counts (label estimate vs reported).
+- Ecosystem surveys: Stack Overflow Developer Survey, JetBrains Dev Ecosystem,
+  the category's own "State of [X]" report; team-size / company-size distributions.
+
+--------------------------------------------------------------------------------
+4) RESEARCH DIMENSIONS  (cover ALL — exhaustively)
+--------------------------------------------------------------------------------
+A. IDEA & POSITIONING — is the core thesis validated? what wedge is real?
+B. MARKET SIZING — TAM vs SAM vs realistic-serviceable; CAGR; multi-analyst spread
+   (report disagreement, not one number); distinguish adjacent markets. Incumbent
+   scale: revenue/ARR, valuation, users/customers/seats (estimate vs reported).
+C. COMPETITIVE LANDSCAPE — for EACH named competitor: model, strengths, key
+   weaknesses, who it's for, exact current pricing/tiers.
+D. *** THE EXHAUSTIVE PAIN LEDGER *** (the centerpiece) — enumerate EVERY recurring
+   customer complaint/issue, organized BOTH by THEME and by COMPETITOR, ranked by
+   recurrence, each with a verbatim quote + source + reaction/engagement count.
+   Cover at least: UX/usability; performance/startup/memory; pricing & paywalls;
+   forced account / cloud / data lock-in; sync & merge; protocols (REST/GraphQL/
+   WS/SSE/gRPC); scripting/sandbox; testing/runner; collaboration; governance/
+   security/secrets; reliability/bugs; support; import/migration fidelity; large
+   responses; search/navigation at scale; offboarding/identity; plus anything else
+   that recurs.
+E. PARITY FEATURES — the must-have baseline users assume every serious product in
+   the category has; missing any = dealbreaker. (Match-to-enter list.)
+F. DIFFERENTIATION — features/qualities that are unowned or done badly by all
+   incumbents; rank by how hard each is to copy and WHY (esp. things a competitor
+   can't do without breaking its own model).
+G. UNFULFILLED GAPS + DISRUPTIVE FEATURES — for each candidate, VALIDATE-OR-KILL:
+   is there cited demand? how widespread? which tools partly serve it & where they
+   fall short? Rank by evidence strength; explicitly mark "NOT validated" ones.
+H. EMERGING GROWTH AVENUES / CATEGORY TRENDS — what is demonstrably picking up
+   (with trend signals), and does it favor this product?
+I. WHY USERS SWITCH — documented migration chains (from→to) and the drivers.
+J. UNIT ECONOMICS & BENCHMARKS — gross margin, NRR/GRR, free-to-paid conversion,
+   CAC, pricing benchmarks, path to profitability (cite benchmark sources).
+K. PRICING / PLANS / METERING / BUSINESS MODELS — competitor tiers & per-seat $;
+   free-tier caps; seat vs usage vs one-time/perpetual; licensing (incl. fair-source/
+   self-host); what to meter and what NOT to; defensible thresholds.
+L. ENTERPRISE NEEDS — validated can't-buy-without dealbreakers: SSO/SAML, SCIM,
+   RBAC/custom roles, audit + SIEM export, data residency, air-gap/on-prem,
+   SOC 2 / ISO 27001 / HIPAA / FedRAMP, admin/governance, procurement reality
+   (security questionnaires, DPA/MSA, vendor risk, the "SSO tax").
+M. MULTI-TENANCY / ORG-HIERARCHY PATTERNS — org→teams→projects→members; how to
+   bill at org level but scope access at team level; precedents (GitLab, GitHub,
+   Atlassian, Slack Enterprise Grid, Figma, Notion/Linear) + their failure modes;
+   the personal-vs-work account boundary; seat dedup.
+N. COLLABORATION MODELS — cross-team, cross-org (partner/contractor), and
+   personal-account-to-personal-account; precedents (Slack Connect, GitHub outside
+   collaborators, 1Password); validated demand vs speculation.
+O. CUSTOMER SEGMENTATION + SIZING — how needs diverge across individual / small
+   team / mid-market / enterprise; team-size & company-size distributions; a
+   defensible free-tier "X members" threshold.
+P. TECH & ARCHITECTURE — build-it choices for the hard subsystems; minimal/portable
+   infra (avoid cloud lock-in; self-host parity); multi-client (desktop/web/CLI/
+   extension) shared components; named candidate libraries.
+Q. GO-TO-MARKET — motion (bottom-up/PLG vs sales-led), channels/distribution,
+   counter-positioning against incumbents' missteps, launch surfaces, DevRel/content.
+R. MOAT / DEFENSIBILITY — especially without lock-in; brand, format/standard,
+   ecosystem, switching costs, network effects, compliance.
+S. ROADMAP SEQUENCING & RISK LEDGER — what to build first; the honest risks
+   (with status: verified vs unverified) and mitigations.
+T. LEGAL / COMPLIANCE / OPERATIONS — ToS/privacy/DPA/EULA, security program
+   (VDP/bug bounty, incident response, SBOM), billing/tax, support/SLA,
+   telemetry-vs-privacy, certification cost & timeline.
+
+--------------------------------------------------------------------------------
+5) OUTPUT FORMAT
+--------------------------------------------------------------------------------
+1. EXECUTIVE SUMMARY (the 5-10 most decision-relevant, validated findings).
+2. PER-DIMENSION FINDINGS (A–T). For each finding:
+     - Claim (one sentence)
+     - Confidence: High / Medium / estimate
+     - Evidence: verbatim quote(s) + numbers
+     - Source URL(s)
+     - Staleness / caveat / self-reported flag
+3. THE EXHAUSTIVE PAIN LEDGER — a table/list by THEME and by COMPETITOR, ranked.
+4. PARITY MATRIX (feature × competitor: has / lacks).
+5. DIFFERENTIATION + VALIDATED-vs-KILLED OPPORTUNITIES (ranked by evidence).
+6. BUSINESS CASE — market, unit economics, pricing/packaging, GTM, moat.
+7. REFUTED CLAIMS (what you checked and killed — for transparency).
+8. OPEN QUESTIONS / HONEST GAPS (what remains unvalidated + how to resolve each).
+
+--------------------------------------------------------------------------------
+6) DISCIPLINE REMINDERS  (repeat to yourself before finalizing)
+--------------------------------------------------------------------------------
+- Truth over flattery. If the idea has a fatal flaw or a strong competitor already
+  owns the space, SAY SO plainly with evidence.
+- Validated pain only promotes a feature. Plausible ≠ proven — label it.
+- Quote sources verbatim; include numbers; date every time-sensitive fact.
+- Prefer a smaller set of well-verified claims over a large set of shaky ones.
+- If running as a multi-agent/fan-out harness: decompose into ~5+ search angles,
+  fetch the top primary sources per angle, extract falsifiable claims, run the
+  2-of-3 adversarial verification, then synthesize — and report the kill rate.
+
+# Tip: run this in several focused passes (e.g., one per cluster of dimensions:
+#  market+competitive; the pain ledger; enterprise+multi-tenancy; pricing+unit-
+#  economics; GTM+growth; tech+architecture) and merge — it goes deeper and is
+#  more reliable than one giant pass, and avoids rate-limit failures.
+================================================================================

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Rambo Codex">
+  <rect width="32" height="32" rx="7" fill="#111827"/>
+  <path d="M7 23V9h7.1c2.9 0 4.8 1.7 4.8 4.3 0 1.7-.8 3-2.3 3.7l4 6h-3.5l-3.2-5.3h-3.7V23H7zm3.2-8h3.6c1.1 0 1.8-.6 1.8-1.6s-.7-1.6-1.8-1.6h-3.6V15z" fill="#f9fafb"/>
+  <circle cx="24" cy="10" r="2" fill="#22c55e"/>
+</svg>

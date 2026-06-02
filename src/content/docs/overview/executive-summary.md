@@ -13,7 +13,7 @@ Developers are repeatedly burned by API clients that force accounts, hold data h
 - **No live LLM-API debugging anywhere** — the unique, unowned surface.
 
 ## The product
-Local-first client (REST/GraphQL/gRPC/WS/SSE), **git-native open file format**, **client-side LLM/agent-API testing**, a first-party **MCP server + deterministic CLI** (agent-native), and a fast, low-RAM native shell. Three tiers: **free local → metered team sync → self-hosted enterprise.** See the [feature deep dives](/rambo/features/).
+Local-first client (REST/GraphQL/gRPC/WS/SSE), **git-native open file format**, **agent-safe privacy controls**, **client-side LLM/agent-API testing**, a first-party **permissioned MCP server + deterministic CLI**, and a fast, low-RAM native shell. Three tiers: **free local → metered team sync → self-hosted enterprise.** See the [feature deep dives](/rambo/features/).
 
 ## The business model
 **Closed-source**; free forever (login optional until you sync; free for up to *X* members); **metered only on backend-synced resources** (never local artifacts); **self-hosted enterprise** with SSO/SCIM/RBAC/audit. Undercut Postman on price *and* features. Details: [business model](/rambo/business/business-model/), [pricing & plans](/rambo/business/pricing-and-plans/), [metering](/rambo/business/metering/).
@@ -28,7 +28,7 @@ Client-first; **one backend only — team sync** (Yjs + S3, self-hostable, which
 Bottom-up: free client + the LLM-testing hook + agent ecosystem → VS Code Marketplace / CLI / MCP registries → counter-position Postman's wounds → expand to teams → climb to enterprise. See [GTM](/rambo/gtm/motion/).
 
 ## The moat (without lock-in)
-Proprietary LLM-testing depth + verifiable-local-first brand + open format + agent-ecosystem gravity + enterprise switching costs + **self-hosting as a compliance advantage** (the customer becomes data controller *and* processor, removing our obligations). See [moat](/rambo/business/moat/).
+Proprietary LLM-testing depth + verifiable-local-first brand + open format + **agent-safe privacy** + enterprise switching costs + **self-hosting as a compliance advantage** (the customer becomes data controller *and* processor, removing our obligations). See [moat](/rambo/business/moat/).
 
 ## The honest risks
-Yaak overlaps ~70% of the thesis; streaming-render basics are catchable by incumbents; closed-source faces enterprise security-review friction; in-client LLM-testing willingness-to-pay is unproven. Full ledger: [risks](/rambo/strategy/risk-ledger/) and [open questions](/rambo/strategy/open-questions/).
+Yaak, ApiArk, Voiden, LiteClient, and RESTK now overlap major parts of the thesis; local-first/no-login/Git-native/MCP is crowded; streaming-render basics are catchable by incumbents; closed-source faces enterprise security-review friction; in-client LLM-testing willingness-to-pay is unproven. Full ledger: [risks](/rambo/strategy/risk-ledger/), [open questions](/rambo/strategy/open-questions/), and [emerging competitors](/rambo/opportunity/emerging-competitors-and-license-leverage/).
