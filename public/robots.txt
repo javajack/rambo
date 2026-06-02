@@ -1,0 +1,5 @@
+# https://javajack.github.io/rambo/
+User-agent: *
+Allow: /
+
+Sitemap: https://javajack.github.io/rambo/sitemap-index.xml

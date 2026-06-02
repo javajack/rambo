@@ -1,0 +1,65 @@
+# Rambo — Local-First, Agent-Native API Client
+
+> Strategy, market, business model, and adversarially-verified feature deep-dives for Rambo: a local-first, closed-source, agent-native API client competing with Postman, Insomnia, Bruno, Yaak and Hoppscotch.
+
+## Author
+
+- Name: Rakesh Waghela
+- Role: Tech & KYC Solutions Architect
+- LinkedIn: https://www.linkedin.com/in/rakeshwaghela
+- X (Twitter): https://x.com/webiyo
+- Consultation: https://topmate.io/rakeshwaghela
+
+## About This Site
+
+This is the product and business knowledge base for Rambo, a local-first, closed-source, agent-native API client. It covers validated developer pain points, the competitive landscape (including emerging entrants ApiArk, RESTK, Voiden, LiteClient and others), the unfulfilled gaps, 19 feature deep-dives, the free → team → enterprise business model (metered only on backend-synced resources, never local artifacts), the architecture (Tauri/Rust shared core, Yjs + S3 sync), enterprise multi-tenancy, go-to-market, and an evidence base where every load-bearing claim passed adversarial verification. The headline wedges: agent-safe local-first execution, migration-perfect imports, deep LLM/SSE stream debugging, a deterministic permissioned CLI/MCP surface, and encrypted reviewable team sync.
+
+## Key Pages
+
+- Executive Summary: https://javajack.github.io/rambo/overview/executive-summary/
+- The Idea: https://javajack.github.io/rambo/overview/the-idea/
+- One-Page Compendium (the complete workout): https://javajack.github.io/rambo/compendium/
+
+## Sections
+
+### Overview
+- https://javajack.github.io/rambo/overview/the-idea/
+- https://javajack.github.io/rambo/overview/executive-summary/
+- https://javajack.github.io/rambo/overview/why-now/
+- https://javajack.github.io/rambo/overview/methodology/
+
+### The Opportunity
+- https://javajack.github.io/rambo/opportunity/customer-pain/
+- https://javajack.github.io/rambo/opportunity/competitive-landscape/
+- https://javajack.github.io/rambo/opportunity/emerging-competitors-and-license-leverage/
+- https://javajack.github.io/rambo/opportunity/unfulfilled-gaps/
+- https://javajack.github.io/rambo/opportunity/market-sizing/
+
+### Product & Features
+- https://javajack.github.io/rambo/product/positioning-and-trust/
+- https://javajack.github.io/rambo/product/feature-map/
+- https://javajack.github.io/rambo/features/
+- https://javajack.github.io/rambo/features/07-client-side-llm-testing/
+- https://javajack.github.io/rambo/features/09-agent-pillar-mcp-cli/
+- https://javajack.github.io/rambo/features/19-request-diagnostics/
+
+### Business & Go-To-Market
+- https://javajack.github.io/rambo/business/business-model/
+- https://javajack.github.io/rambo/business/pricing-and-plans/
+- https://javajack.github.io/rambo/business/unit-economics/
+- https://javajack.github.io/rambo/gtm/motion/
+- https://javajack.github.io/rambo/gtm/counter-positioning/
+
+### Enterprise & Architecture
+- https://javajack.github.io/rambo/enterprise/
+- https://javajack.github.io/rambo/enterprise/tenancy-model/
+- https://javajack.github.io/rambo/architecture/overview/
+- https://javajack.github.io/rambo/architecture/tech-stack/
+- https://javajack.github.io/rambo/specs/
+
+### Strategy & Evidence
+- https://javajack.github.io/rambo/strategy/roadmap/
+- https://javajack.github.io/rambo/strategy/risk-ledger/
+- https://javajack.github.io/rambo/strategy/open-questions/
+- https://javajack.github.io/rambo/evidence/research-findings/
+- https://javajack.github.io/rambo/evidence/sources/

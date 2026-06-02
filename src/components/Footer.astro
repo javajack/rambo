@@ -1,0 +1,40 @@
+---
+// Custom footer: render Starlight's default footer, then append author attribution.
+import Default from '@astrojs/starlight/components/Footer.astro';
+---
+
+<Default><slot /></Default>
+
+<div class="rambo-attribution">
+  <span>Built by <a href="https://www.linkedin.com/in/rakeshwaghela" rel="author">Rakesh Waghela</a></span>
+  <span class="sep" aria-hidden="true">·</span>
+  <a href="https://x.com/webiyo" rel="me">X</a>
+  <span class="sep" aria-hidden="true">·</span>
+  <a href="https://www.linkedin.com/in/rakeshwaghela" rel="me">LinkedIn</a>
+  <span class="sep" aria-hidden="true">·</span>
+  <a href="https://topmate.io/rakeshwaghela" rel="me">Topmate</a>
+</div>
+
+<style>
+  .rambo-attribution {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--sl-color-gray-5);
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.6rem;
+    align-items: center;
+  }
+  .rambo-attribution a {
+    color: var(--sl-color-text-accent);
+    text-decoration: none;
+  }
+  .rambo-attribution a:hover {
+    text-decoration: underline;
+  }
+  .rambo-attribution .sep {
+    color: var(--sl-color-gray-5);
+  }
+</style>
