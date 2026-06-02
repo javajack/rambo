@@ -36,6 +36,7 @@ export default defineConfig({
         { label: 'Go-To-Market', autogenerate: { directory: 'gtm' } },
         { label: 'Architecture & Implementation', autogenerate: { directory: 'architecture' } },
         { label: 'Engineering Specs', autogenerate: { directory: 'specs' }, collapsed: true },
+        { label: 'Backend & Infrastructure', autogenerate: { directory: 'backend' }, collapsed: true },
         { label: 'Strategy & Decisions', autogenerate: { directory: 'strategy' } },
         { label: 'Evidence', autogenerate: { directory: 'evidence' } },
       ],
