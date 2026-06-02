@@ -31,6 +31,10 @@ Postman's SSE viewer **dropped the first event** on LLM streams, returning empty
 Cross-file proto imports still broken in Insomnia ([#3316](https://github.com/Kong/insomnia/issues/3316), open); Postman's proto-import + reflection both broke (2022); Bruno shipped gRPC/WS only in 2025.
 **→ Rambo:** `.pb` descriptor ingestion, cross-file resolution, complete reflection.
 
+## 🟡 Request failures are ambiguous — devs leave the client to debug
+When a call fails or stalls, the client rarely says *why* — DNS, TCP, firewall, proxy, TLS, timeout, or route? Postman's own SSL guide enumerates exactly this failure taxonomy ([SSL troubleshooting](https://blog.postman.com/self-signed-ssl-certificate-troubleshooting/)), and developers fall back to `curl`/`dig` to disambiguate — one Postman thread shows generated `curl` succeeding while the same `.local` request failed *in* Postman ([community #65102](https://community.postman.com/t/postman-unable-to-talk-to-local-endpoint-ip-is-fine/65102)). Postman even *added* a network-info icon (IP/TLS/cert/cipher) acknowledging the gap ([blog](https://blog.postman.com/see-network-info-for-postman-api-requests/)), and Cloudflare's docs route users to DNS-resolver comparison and curl timing breakdowns ([1.1.1.1](https://developers.cloudflare.com/1.1.1.1/troubleshooting/), [gathering info](https://developers.cloudflare.com/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/)).
+**→ Rambo:** in-app [request diagnostics](/rambo/features/19-request-diagnostics/) (DNS/TCP/TLS/timing/proxy) against the actual request — request-adjacent, not a NetOps suite.
+
 ## 🟡 Organization collapses at scale
 Postman's Collection Runner folder browsing is a perf bug ([#8642](https://github.com/postmanlabs/postman-app-support/issues/8642)); Insomnia's tabs opened on every click (*"a million tabs"*, [#6108](https://github.com/Kong/insomnia/discussions/6108)); Hoppscotch rendered **only 30 of 811 collections** ([#4423](https://github.com/hoppscotch/hoppscotch/issues/4423)).
 **→ Rambo:** virtualized tree, find-across-collections, sane preview tabs.

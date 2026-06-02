@@ -47,7 +47,7 @@ The bet, distilled:
 | Tool | Model | Best at | Weakest at |
 |---|---|---|---|
 | **Postman** | proprietary, cloud-first | breadth, ecosystem, 35M+ users, MCP investment | forced accounts, RAM/startup bloat, secret leakage, pricing (free→1-user Mar 2026) |
-| **Insomnia** (Kong) | proprietary, cloud-default | clean UX, multi-protocol | 2023 forced-account exodus; thin AI; cloud-gated; Local Vault still needs an account |
+| **Insomnia** (Kong) | proprietary; local/Git/cloud options | clean UX, multi-protocol; now offers local/Git/cloud storage, E2EE, free Git Sync ≤3 users, SSO/SCIM | 2023 forced-account exodus (still cited); thin AI; account still required for cloud features (don't attack a stale "cloud-only" Insomnia) |
 | **Bruno** | OSS, **git-native local** | plain-text/git, no account, bootstrapped, loved | no first-party MCP (closing); git merge friction; large-response freezes; reversed its `.bru` DSL → YAML |
 | **Yaak** | MIT source + paid license, **local-first** | local-only, zero-telemetry, multi-protocol, **agent CLI + MCP** | not git-native; no LLM-testing depth; encrypted-secrets buggy |
 | **Hoppscotch** | MIT + paid, web-first | free, fast, web-based | WS/SSE can't set custom headers; scale/pagination issues |
@@ -80,6 +80,9 @@ Free team collab removed (Postman Mar 2026); Thunder Client's Aug-2025 paywall *
 
 ### 🟡 gRPC & protocol gaps
 gRPC weakest layer — cross-file proto imports still broken (Insomnia [#3316](https://github.com/Kong/insomnia/issues/3316)); Hoppscotch WS/SSE can't set custom headers ([#5002](https://github.com/hoppscotch/hoppscotch/issues/5002)). **→ `.pb` + cross-file proto, native WS/SSE headers.**
+
+### 🟡 Request failures are ambiguous — devs leave the client to debug
+Clients show *that* a call failed, rarely *why* (DNS, TCP, proxy, TLS, timeout, route). Postman's own SSL guide enumerates that taxonomy; devs fall back to `curl`/`dig` (a Postman thread shows curl succeeding while the `.local` request failed *in* Postman, [#65102](https://community.postman.com/t/postman-unable-to-talk-to-local-endpoint-ip-is-fine/65102)); Postman *added* a network-info icon acknowledging the gap; Cloudflare routes users to DNS-resolver comparison + curl timing. **→ in-app [request diagnostics](/rambo/features/19-request-diagnostics/) against the actual request — an *enhancer* ("Rambo explains the path to the response"), request-adjacent, not a NetOps suite; no separate WTP assumed.**
 
 ### 🟡 Scripting sandbox & runner memory
 Postman's sandbox lacked async for ~5 years, isn't real Node ([#3646](https://github.com/postmanlabs/postman-app-support/issues/3646)); the Runner/Newman **leaks memory** (16GB+, crashes large runs — [#2440](https://github.com/postmanlabs/postman-app-support/issues/2440), [#10453](https://github.com/postmanlabs/postman-app-support/issues/10453)); Newman silently passes 4xx/5xx. **→ modern sandbox (deno_core), ESM imports, non-leaking runner, sane CI defaults.**
@@ -138,7 +141,7 @@ Ranked by "what sells," each durable because copying it would break the incumben
 
 ## 9. The product
 
-Three tiers — **free local / metered team / self-hosted enterprise** — over a shared core. Differentiators: agent-drivability, live LLM testing, git-native local-first, verifiable closed-source trust. The 18 feature deep-dives: [Features](/rambo/features/). The v0.1 wedge: a lean local client + full client-side LLM testing + MCP + CLI + git-sync, free and login-optional.
+Three tiers — **free local / metered team / self-hosted enterprise** — over a shared core. Differentiators: agent-drivability, live LLM testing, git-native local-first, verifiable closed-source trust. The 18 feature deep-dives (plus a [request-diagnostics](/rambo/features/19-request-diagnostics/) companion): [Features](/rambo/features/). The v0.1 wedge: a lean local client + full client-side LLM testing + MCP + CLI + git-sync, free and login-optional.
 
 ## 10. Tech & architecture
 

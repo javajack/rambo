@@ -29,6 +29,9 @@ Admin-viewable, filterable, **exportable** audit log; residency/region selection
 - For **self-host**, audit logs stay entirely on the customer's infra (no exfiltration).
 - We still need SOC 2 for **our own** managed/control-plane — scope it to first enterprise deals.
 
+## Operating artifacts (the non-product compliance layer)
+Enterprise buyers don't purchase on product features alone; a closed-source desktop vendor also needs a minimum operating package. Beyond the SOC 2 / ISO / VPAT / residency items above, the validated checklist adds: **ToS/EULA + privacy policy** (covering local data, sync data, telemetry, and subprocess/agent access), **DPA/MSA templates**, a **security overview + architecture diagram**, a **vulnerability disclosure policy (VDP)**, an **incident-response process**, **SBOM / dependency disclosure**, **code-signing & release integrity**, a **data deletion/export process**, and **support/SLA + billing/tax operations**. Self-hosting *reduces* data-processing exposure but does **not** remove buyer diligence — security practices, dependency controls, incident process, and contract terms are still required. *(The full finance/legal/security-program/support/DevRel build-out is a [deliberately deferred ops layer](/rambo/strategy/roadmap/); this is the compliance-critical subset.)*
+
 ## Dependencies
 Requires **[12 · backend](/rambo/features/12-realtime-team-sync/)** + **[16 · RBAC](/rambo/features/16-rbac-and-governance/)**; tightly linked to **[18 · self-hosting](/rambo/features/18-self-hosting/)**.
 

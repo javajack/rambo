@@ -25,7 +25,7 @@ Primary sources (vendor docs, official trackers, maintainer statements, security
 - Bruno gaps — MCP [#4806](https://github.com/usebruno/bruno/issues/4806), LLM streaming [#7835](https://github.com/usebruno/bruno/issues/7835), git friction [#6889](https://github.com/usebruno/bruno/issues/6889)/[#6864](https://github.com/usebruno/bruno/issues/6864)
 - Yaak — [site](https://yaak.app/), [github](https://github.com/mountain-loop/yaak)
 - ApiArk — [site](https://apiark.dev/), [github](https://github.com/berbicanes/apiark), [pricing](https://apiark.dev/pricing)
-- RESTK — [site](https://restk.ai/), [terms](https://restk.ai/terms), [privacy](https://restk.ai/privacy)
+- RESTK — [site](https://restk.ai/), [terms](https://restk.ai/terms), [privacy](https://restk.ai/privacy), [Reddit launch (Claude Code workflow)](https://www.reddit.com/r/ClaudeAI/comments/1sey34h/restk_first_api_client_built_for_todays_developer/)
 - OpenReq — [site](https://openreq.app/), [github](https://github.com/n1kozor/OpenReq)
 - Voiden — [github](https://github.com/VoidenHQ/voiden)
 - LiteClient — [site](https://liteclient.com/), [github](https://github.com/liteclienthq/liteclient)
@@ -37,7 +37,12 @@ Primary sources (vendor docs, official trackers, maintainer statements, security
 - Postman MCP — [product](https://www.postman.com/product/mcp-server) · Insomnia AI — [docs](https://developer.konghq.com/insomnia/ai-in-insomnia/)
 - Large-response — [postman#4751](https://github.com/postmanlabs/postman-app-support/issues/4751) · SSE/LLM — [#13537](https://github.com/postmanlabs/postman-app-support/issues/13537) · gRPC — [insomnia#3316](https://github.com/Kong/insomnia/issues/3316)
 - Org/migration — [postman#8642](https://github.com/postmanlabs/postman-app-support/issues/8642), [insomnia#6108](https://github.com/Kong/insomnia/discussions/6108), [hoppscotch#4423](https://github.com/hoppscotch/hoppscotch/issues/4423), [insomnia#6204](https://github.com/Kong/insomnia/issues/6204), [bruno#3061](https://github.com/usebruno/bruno/issues/3061)
-- Pricing pages — [Postman](https://www.postman.com/pricing/), [Insomnia](https://insomnia.rest/pricing), [Hoppscotch](https://hoppscotch.com/pricing)
+- Pricing pages — [Postman](https://www.postman.com/pricing/), [Insomnia](https://insomnia.rest/pricing), [Hoppscotch](https://hoppscotch.com/pricing), [Bruno](https://www.usebruno.com/pricing), [Yaak](https://yaak.app/pricing), [Thunder Client](https://extapi.thunderclient.com/pricing), [Apidog](https://apidog.com/pricing/) + [APIs.io Apidog profile (free-up-to-4 corroboration)](https://plans.apis.io/plans/apidog/apidog-plans-pricing/)
+
+## Request diagnostics & network layer
+- Cloudflare troubleshooting — [1.1.1.1 (DNS resolver comparison, traceroute, TCP)](https://developers.cloudflare.com/1.1.1.1/troubleshooting/), [gathering info (curl HTTP-timing breakdown, MTR)](https://developers.cloudflare.com/support/troubleshooting/general-troubleshooting/gathering-information-for-troubleshooting-sites/)
+- Postman — [network info icon (IP/TLS/cert/cipher)](https://blog.postman.com/see-network-info-for-postman-api-requests/), [SSL troubleshooting (firewall/proxy/cert/timeout taxonomy)](https://blog.postman.com/self-signed-ssl-certificate-troubleshooting/), community [.local endpoint #65102](https://community.postman.com/t/postman-unable-to-talk-to-local-endpoint-ip-is-fine/65102), [local-URL DNSLookup #69154](https://community.postman.com/t/requests-to-local-url-either-timing-out-or-getting-dns-lkup-error/69154/2)
+- Globalping — [site (ping/traceroute/dig/curl/MTR probes)](https://globalping.io/), [Raycast extension](https://www.raycast.com/globalping/globalping)
 
 ## Business, licensing, moat, economics
 - Sublime [FAQ](https://www.sublimehq.com/sales_faq) · GitLab [pricing](https://about.gitlab.com/pricing/)/[SAML](https://docs.gitlab.com/integration/saml/) · Plausible [CE](https://plausible.io/blog/community-edition) · Sentry [FSL](https://blog.sentry.io/introducing-the-functional-source-license-freedom-without-free-riding/) · PostHog [security](https://posthog.com/handbook/company/security)

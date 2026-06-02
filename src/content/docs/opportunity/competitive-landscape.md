@@ -10,7 +10,7 @@ sidebar:
 | Tool | Model | Strengths | Key weaknesses |
 |---|---|---|---|
 | **Postman** | Proprietary, cloud-first | Breadth, ecosystem, 35M+ users, MCP investment | Forced accounts, RAM bloat, secret leakage, pricing resentment, removed free team collab (Mar 2026) |
-| **Insomnia** (Kong) | Proprietary, cloud-default | Clean UX, multi-protocol | 2023 forced-account exodus; thin AI features; cloud-gated |
+| **Insomnia** (Kong) | Proprietary; local/Git/cloud options | Clean UX, multi-protocol; **now** offers local/Git/cloud storage, E2EE, free Git Sync (≤3 users), SSO/SCIM | 2023 forced-account exodus (still cited); thin AI; account still required for cloud features |
 | **Bruno** | Open-source, **git-native local** | Plain-text/git, no account, bootstrapped, loved | No first-party MCP (closing); git merge friction; reversed its custom `.bru` DSL → YAML |
 | **Yaak** | MIT source + paid license, **local-first** | Local-only, zero-telemetry, multi-protocol, **agent CLI + MCP** | Not git-native; no LLM-testing depth |
 | **Hoppscotch** | MIT + paid, web-first | Free, fast, web-based | WS/SSE can't set custom headers; scale/pagination issues |
@@ -19,6 +19,8 @@ sidebar:
 | **RESTK** | Proprietary, native macOS | Embedded MCP, schema extraction, synthetic data, credential redaction, AI audit trail | Direct threat to the agent-safe privacy wedge; no code leverage |
 | **Voiden** | Apache-2.0, file-native | Offline/Git-native `.void` files, docs/tests/requests together, agent-friendly CLI/skills | Strong file-native/AI-editable pressure |
 | **LiteClient** | MIT, VS Code extension | No account, no telemetry, local storage, Postman import/export, scripts/tests | Editor-native distribution pressure |
+
+*Honesty note: don't attack a stale Insomnia. Its current pricing page advertises local/Git/cloud storage, E2EE, free Git Sync for up to 3 users, and Enterprise storage mandates — so Rambo must beat **current** Insomnia on polish, import fidelity, stream correctness, agent determinism, and the trust contract, not on an outdated "cloud-only" caricature.*
 
 ## The closest legacy-overlap competitor: Yaak
 

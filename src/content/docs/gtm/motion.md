@@ -7,7 +7,7 @@ sidebar:
 
 ## Sequencing — win one segment, then climb
 
-1. **Land (free):** individuals adopt the free local-first client for the **trust wedge** + the **LLM-testing hook** + **agent-drivability**. This is the top of funnel.
+1. **Land (free):** individuals adopt the free local-first client for the **trust wedge** + the **LLM-testing hook** + **agent-drivability**. This is the top of funnel. A sharp secondary demo — *"Why did this API fail: DNS, TLS, proxy, or the server?"* — turns [request diagnostics](/rambo/features/19-request-diagnostics/) into a memorable hook ("Postman shows the status; Rambo explains the path to it").
 2. **Counter-position** on Postman's live wounds (removed free team collab; cloud lock-in; bloat) — time campaigns to its next pricing tightening.
 3. **Expand (team):** convert when teams grow past the free-*X* members or want managed real-time sync. The paid value is real-time sync + clean merge/conflict UX.
 4. **Climb (enterprise):** once team traction exists, sell self-hosting + SSO/SCIM/RBAC/audit/compliance to the orgs the bottom-up motion already seeded.

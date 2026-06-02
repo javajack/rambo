@@ -21,8 +21,11 @@ Recurring public requests across tools: Hoppscotch [#870](https://github.com/hop
 ### 4. Spec-first / OpenAPI drift detection — *parity bet, not demand-pull*
 Compare an OpenAPI spec to the collection (missing/stale/modified endpoints), preserving user tests. Real & shipping/roadmap in Bruno ([OpenAPI Sync](https://docs.usebruno.com/open-api/openapi-sync); drift proposal [#7707](https://github.com/usebruno/bruno/issues/7707)) — **but community demand is thin** (one roadmap issue, ~zero engagement). Treat as **competitive parity**, not a wedge.
 
+### 5. Request-failure diagnostics — *validated demand, enhancer-grade*
+DNS/TCP/TLS/timing/proxy checks beside the actual request (the "why did this fail?" workbench). Demand is validated by primary support docs — Postman's SSL-failure taxonomy and network-info icon, Cloudflare's DNS-resolver/curl-timing guidance, and Globalping/Raycast's diagnostics UX — and devs already leave the client for `curl`/`dig`. **Honest line:** it's a sharp **workflow enhancer, not a primary wedge**, with *no* evidence of separate willingness-to-pay and a real scope-creep risk (don't ship a full NetOps toolbox). Build the request-centric Tier-1 flow; defer ping/traceroute/MTR. Detail: [Feature 19](/rambo/features/19-request-diagnostics/).
+
 ## 🟡 Weak — nice-to-have, not a wedge
-- **Response diffing / snapshotting** (baseline an example, auto-diff later runs). Valid concept (Kreya ships it; Jest/Playwright pattern), but public demand is **thin/one-off** — ~7 thumbs across ~5 Postman issues over a decade. Build only if cheap.
+- **Response diffing / snapshotting** (baseline an example, auto-diff later runs). Valid concept (Kreya ships it; Jest/Playwright pattern), but public demand is **thin/one-off** — ~7 thumbs across ~5 Postman issues over a decade. The new-entrant scan nudges it from "weak" to **plausible-but-secondary**: ApiArk and Postmate Client both position response compare/diff as product value — still weaker than import/secrets/streaming. Build only if cheap.
 
 ## ❌ NOT validated — do not build on current data
 The dedicated non-obvious-source pass found **no surviving cited demand** for these (evidence gap, not disconfirmation — but the discipline is no-build-without-validated-pain):
@@ -31,7 +34,7 @@ The dedicated non-obvious-source pass found **no surviving cited demand** for th
 - **AI-assisted request/test authoring** (beyond the [live LLM-testing wedge](/rambo/features/07-client-side-llm-testing/))
 
 ## The disciplined stance
-**Build the four validated** (secrets = core; API catalog = the system-of-record expansion; config-as-code = rides our format; spec-drift = parity). **Hold the weak one** as a cheap differentiator. **Don't build the three unvalidated** without a fresh signal.
+**Build the four validated** (secrets = core; API catalog = the system-of-record expansion; config-as-code = rides our format; spec-drift = parity), plus **request diagnostics as an enhancer** (Tier-1 only, if resources allow). **Hold the weak one** (response diffing) as a cheap differentiator. **Don't build the three unvalidated** without a fresh signal.
 
 :::tip[The bigger prize]
 **Internal API catalog / discoverability** is the standout — strongest-validated *and* most strategically expansive: the path from "a better API client" to "the team's API system of record." A deliberate post-core bet.

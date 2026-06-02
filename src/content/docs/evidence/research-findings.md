@@ -52,5 +52,12 @@ Findings from a multi-round deep-research program. Only claims that passed 2-of-
 - **[H]** The OAuth2 **callback handoff** (browser→app) is the most failure-prone auth component (Postman #13335/#8717).
 - **[H/est]** LLM-observability demand is large & consolidating (ClickHouse acquired Langfuse, Jan 2026).
 
+## 12. Request diagnostics (adjacent network layer)
+- **[H]** Request-adjacent network diagnostics are validated; a *broad* network toolbox is not. Cloudflare and Postman docs repeatedly route users to DNS, curl, TLS, proxy, timeout, and connectivity checks for API/site failures.
+- **[H]** DNS resolver comparison belongs next to API-failure debugging (Cloudflare: compare `dig`/`nslookup` across 1.1.1.1 / 1.0.0.1 / 8.8.8.8); HTTP-timing breakdown (DNS/connect/TLS/TTFB/transfer) and TLS/certificate inspection should be first-class (Postman added a network-info icon; its SSL guide lists cert/proxy/client-cert failures).
+- **[H]** Developers use CLI tools to disambiguate client failures (Postman `.local` thread: generated `curl` worked while Postman failed).
+- **[M-H]** Remote-probe diagnostics are a credible *later* extension (Globalping ping/traceroute/dig/curl/MTR; official Raycast extension) — adds quota/privacy/dependency concerns; defer until local diagnostics prove out.
+- **[M] Not validated:** separate willingness-to-pay for diagnostics; that a full network toolbox belongs in an API client; that ICMP ping/traceroute/MTR should precede request-centric diagnostics. → an *enhancer*, not a wedge. See [Feature 19](/rambo/features/19-request-diagnostics/).
+
 ## Honest gaps
 Follow-up passes **closed** the scripting/testing gap (validated: restricted sandbox, runner memory-leak, Newman silent-pass, `pm.*` lock-in) and the collaboration-demand gap (the want is review-gating + legible diffs, not comments/presence). What remains low-confidence: auth flow-ergonomics *beyond* the OAuth callback (SigV4, mTLS, refresh rotation). Tracked in [Open Questions](/rambo/strategy/open-questions/).

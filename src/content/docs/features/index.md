@@ -21,6 +21,7 @@ Each feature page carries: *what it is · validated competitor pain (cited) · d
 9. [Agent pillar — MCP server + CLI](/rambo/features/09-agent-pillar-mcp-cli/) — *agent-native*
 10. [Import & migration](/rambo/features/10-import-and-migration/) — *the migration wedge*
 11. [App shell & UX foundation](/rambo/features/11-app-shell-and-ux/)
+- *companion:* [Request diagnostics (adjacent network utilities)](/rambo/features/19-request-diagnostics/) — DNS/TCP/TLS/timing/proxy checks beside a failing request; build into core *if resources allow*, else a fast-follow (numbered 19 as adjacent scope, not because it ships last)
 
 ## Team-sync cluster
 12. [Real-time team sync](/rambo/features/12-realtime-team-sync/) — the one backend

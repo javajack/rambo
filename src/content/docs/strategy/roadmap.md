@@ -13,6 +13,7 @@ sidebar:
 4. **Team tier** — real-time cloud sync + seat/consumption metering, once adoption shows.
 5. **Defer enterprise** until team pull, then SSO/SCIM/compliance + self-host.
 6. **Run the de-risking spikes** — sync cost at scale, SOC 2 path/cost, Tauri-vs-Electron benchmarks, and (via prototype, not desk research) in-client LLM-testing willingness-to-pay.
+7. **Stand up the operating layer (deferred but tracked)** — the non-product **ops & business-functions** workstream: finance/billing-tax ops, legal (ToS/EULA, privacy, DPA/MSA), the security program (VDP, incident response, SBOM, code-signing), support/SLA, and DevRel. The compliance-critical subset is specced in [Feature 17](/rambo/features/17-audit-and-compliance/); the full build-out is sequenced behind the team tier, not before it.
 
 ## Sequencing logic
 The build order mirrors the [dependency-ordered features](/rambo/features/): the open file format and request engine first (everything serializes into them), then the agent surface and the LLM-testing wedge (the reasons to switch), then the one backend (team sync) for monetization, then enterprise governance.

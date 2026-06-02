@@ -25,6 +25,9 @@ Postman can't easily match free local-first collaboration without undercutting i
 ## vs Yaak — the real fight
 Yaak shares the local-first + agent posture. We win on **git-native storage + LLM-testing depth + the unified agent suite**, and on a polished, fast, trustworthy product. This is a *better-execution* contest, not a positioning one — so the bar is high.
 
+## vs the whole field — request-failure ambiguity
+Every client shows you *that* a request failed; **none explains the path**. When a call dies, is it DNS, TCP, TLS, a proxy/VPN, the server, or your request logic? Developers answer this today by leaving the client for `curl`/`dig`/`openssl`. → *Rambo runs [request diagnostics](/rambo/features/19-request-diagnostics/) against the actual request and shows the evidence timeline in-app.* This is a workflow enhancer, not the core wedge — but it's a clean demo no incumbent matches.
+
 ## The umbrella message
 > **"Everything you liked about Postman, none of the betrayal — plus the things AI-era developers actually need."**
 

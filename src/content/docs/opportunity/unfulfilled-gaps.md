@@ -38,6 +38,10 @@ Postman has MCP; Yaak has an agent CLI; RESTK has embedded MCP; ApiArk lists an 
 ## 9. Cross-org collaboration + a sane account boundary
 No API client does **symmetric cross-org collaboration** (Postman's Guest role is "crippled"; Partner Workspaces is one-directional), and **none** handles the **personal-vs-work boundary** well — there is no account-merge in any tool, and leaving an org can *wipe your personal data*. "Sharing = a scoped sync grant" + "one identity, data-level ownership" is unowned territory. See [Enterprise → Collaboration](/rambo/enterprise/collaboration/) and the [tenancy model](/rambo/enterprise/tenancy-model/).
 
+## 10. Request-failure diagnosis — *validated as a workflow enhancer, not yet a product*
+Every client shows *that* a request failed; **none explains the path** (DNS, TCP, TLS, proxy/VPN, server, or request logic). Developers disambiguate by leaving the client for `curl`/`dig`/`openssl`. Postman recognized a slice (a read-only network-info icon) but doesn't unify diagnosis against the actual request. Cloudflare's own troubleshooting docs route users through DNS-resolver comparison and curl timing breakdowns. An **API-adjacent diagnostic workbench** (DNS/TCP/TLS/timing/proxy, with copyable CLI equivalents and redacted shareable artifacts) is unowned.
+**Honest caveat:** this is a sharp *enhancer*, **not** a primary wedge — and there's no evidence developers will pay *separately* for it, nor that a full network toolbox belongs in an API client. Build the request-centric Tier-1 flow; defer ping/traceroute/MTR. See [Feature 19](/rambo/features/19-request-diagnostics/).
+
 :::tip[The thesis in one line]
 The win isn't any single feature — it's **agent-safe unification**: local files + faithful import + redacted agent tooling + permissioned MCP/CLI + deep LLM-API testing + encrypted reviewable sync, in one fast, closed-but-trusted product.
 :::

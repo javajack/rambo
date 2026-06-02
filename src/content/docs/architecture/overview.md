@@ -19,7 +19,7 @@ A local-first, git-native client needs **essentially no backend for its core** �
 Metering only exists where a backend exists (paid tiers) → infra cost tracks paying users. The highest-value tier costs us the *least* to serve.
 
 ## The layers
-- **Client (everything by default):** the request engine, response viewer, collections, environments, secrets (OS keychain), all protocols, **client-side LLM testing**, the **MCP server**, and the **deterministic CLI** — all on the user's machine, zero backend.
+- **Client (everything by default):** the request engine, response viewer, collections, environments, secrets (OS keychain), all protocols, **client-side LLM testing**, the **MCP server**, the **deterministic CLI**, and a **request-diagnostics core** (DNS/TCP/TLS/timing/proxy, kept *separate* from request execution so it stays request-adjacent, not a NetOps suite) — all on the user's machine, zero backend. Diagnostic results are local artifacts, not synced by default, and redacted before any share; they surface as read-only CLI/MCP tools. See [Feature 19](/rambo/features/19-request-diagnostics/).
 - **Storage:** plain-text files in an [open format](/rambo/features/01-file-format-and-storage/), in the user's own Git.
 - **Sync backend (the one backend):** a [Yjs + S3 sync engine](/rambo/architecture/sync-engine/) for the paid team tier — which **self-hosts unchanged** to become the enterprise on-prem story.
 

@@ -15,6 +15,7 @@ sidebar:
 | **Git-sync** (user's own repo, $0 infra) | ✅ free forever | ✅ | ✅ |
 | **MCP server + deterministic CLI** | ✅ | ✅ | ✅ |
 | **★ Live LLM/agent-API testing** | ✅ core | ✅ + team shares | ✅ |
+| Request diagnostics (DNS/TCP/TLS/timing/proxy) | ✅ local (core if resources allow) | ✅ + redacted shareable artifacts | ✅ |
 | Collaboration | ✅ up to *X* members | metered beyond *X* | unlimited |
 | Login | optional (only when syncing) | required | SSO |
 | Real-time cloud sync, shared workspaces | — | ✅ | ✅ |
